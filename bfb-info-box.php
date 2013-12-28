@@ -108,7 +108,7 @@ function wtbfb_info_box_content( ) {
 	$permalink = apply_filters( 'wtbfb_info_box_permalink', 'http://speakinginbytes.com/2013/12/blogging-competition/' );
 
 	// format the string
-	$string = __( '%%WRAPPEROPEN%% This post is %1$s out of %2$s in the <a href="%3$s">Blogging for Benjamin competition</a>. %%WRAPPERCLOSE%%', 'wtbfbib');
+	$string = __( '%%WRAPPEROPEN%% This is post #%1$s out of %2$s in the <a href="%3$s">Blogging for Benjamin competition</a>. %%WRAPPERCLOSE%%', 'wtbfbib');
 	$result = sprintf( $string, $current_post_number, $total_posts, $permalink );
 
 	// format the wrappers
