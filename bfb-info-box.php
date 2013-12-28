@@ -91,9 +91,8 @@ function wtbfb_check_add_info_box( ) {
 function wtbfb_info_box_content( ) {
 
 	// get total posts during the WTBFB competition
-	$args = array( 'year' => 2013, 'monthnum' => 12, 'order' => "ASC" );	
+	$args = array( 'posts_per_page' => 31, 'year' => 2013, 'monthnum' => 12, 'order' => "ASC" );	
 	$all_posts = get_posts( $args );
-	// $all_posts = get_posts( "year=2013&monthnum=12" );
 	$total_posts = count( $all_posts );
 
 	// get the current post number.
