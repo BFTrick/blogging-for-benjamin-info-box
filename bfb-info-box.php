@@ -119,7 +119,7 @@ function wtbfb_info_box_content( ) {
 	$result = str_replace( "%WRAPPEROPEN%", $opening_wrapper, $result );
 	$result = str_replace( "%WRAPPERCLOSE%", $closing_wrapper, $result );
 
-	return apply_filters( 'wtbfb_info_box_content', $result );
+	return apply_filters( 'wtbfb_info_box', $result );
 }
 
  
